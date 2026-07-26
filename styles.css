@@ -407,14 +407,6 @@ a:focus-visible {
   outline-color: var(--dawn);
 }
 
-.site-footer__copy {
-  margin: 0 !important;
-  padding-top: 1.25rem;
-  border-top: 1px solid rgba(184, 205, 216, 0.2);
-  font-size: 0.85rem !important;
-  color: rgba(184, 205, 216, 0.65);
-}
-
 /* —— Motion —— */
 @keyframes sky-shift {
   from {
@@ -495,12 +487,20 @@ a:focus-visible {
   gap: 0.65rem 1rem;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 1.25rem 0 0;
+  border-top: 1px solid rgba(184, 205, 216, 0.2);
 }
 
 .footer-nav a {
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.site-footer__copy {
+  margin: 1rem 0 0 !important;
+  padding-top: 0;
+  border-top: none;
+  font-size: 0.85rem !important;
+  color: rgba(184, 205, 216, 0.65);
 }
 
 /* —— Legal pages (formal document style) —— */

@@ -369,7 +369,7 @@ a:focus-visible {
 }
 
 .legal-list {
-  margin: 0 0 2rem;
+  margin: 0 0 1.5rem;
   padding: 0;
   display: grid;
   gap: 1.1rem;
@@ -484,4 +484,141 @@ a:focus-visible {
   .hero__content {
     max-width: 38rem;
   }
+}
+
+/* —— Footer legal links —— */
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.65rem 1rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav a {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* —— Legal pages (formal document style) —— */
+body.legal-page {
+  background: #fafafa;
+  color: #1a1a1a;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.legal-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem clamp(1.25rem, 4vw, 2.5rem);
+  background: #fff;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.logo--legal {
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+.logo--legal:hover {
+  color: var(--ink-soft);
+}
+
+.nav-link--legal {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #44555f;
+  text-decoration: none;
+}
+
+.nav-link--legal:hover {
+  color: var(--ink);
+}
+
+.legal-doc {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: clamp(2.25rem, 6vh, 3.5rem) clamp(1.25rem, 4vw, 2rem)
+    clamp(3rem, 8vh, 5rem);
+}
+
+.legal-doc__title {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 3.2vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  padding-bottom: 1.15rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.legal-doc > .legal-doc__intro {
+  margin: 0 0 2.25rem;
+  color: #333;
+  font-size: 1.02rem;
+}
+
+.legal-doc section {
+  margin: 0 0 2.15rem;
+}
+
+.legal-doc h2 {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.legal-doc h3 {
+  margin: 1.25rem 0 0.55rem;
+  font-family: var(--font-body);
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.legal-doc p {
+  margin: 0 0 0.85rem;
+  color: #333;
+}
+
+.legal-doc ul {
+  margin: 0 0 0.85rem;
+  padding-left: 1.25rem;
+  color: #333;
+}
+
+.legal-doc li {
+  margin-bottom: 0.45rem;
+}
+
+.legal-doc li::marker {
+  color: #667788;
+}
+
+.legal-doc a {
+  color: var(--ink);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.legal-doc a:hover {
+  color: var(--accent-deep);
+}
+
+.legal-page .site-footer__inner {
+  max-width: 44rem;
 }
